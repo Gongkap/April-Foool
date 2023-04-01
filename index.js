@@ -1,5 +1,5 @@
 require('dotenv').config();
-const port =process.env.PORT | 3000;
+const PORT =process.env.PORT | 3000;
 const express =require('express');
 const ejs=require('ejs');
 const path =require('path');
@@ -16,6 +16,6 @@ app.get('/',(req,res)=>{
     res.render('home');
 })
 
-app.listen(port,()=>{
-    console.log('listening on the port '+port);
+app.listen(PORT,()=>{
+    console.log(`listening on the port ${PORT}`);
 })
