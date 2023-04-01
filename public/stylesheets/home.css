@@ -2,6 +2,10 @@ body{
     background-color: #343f4f;
     color: white;
 }
+
+.header h2{
+    color: rebeccapurple;
+}
 main{
     margin: 20px auto;
     width: 80%;
@@ -21,7 +25,7 @@ main{
 .heading{
    
     animation-name: myanimation;
-    animation-duration:.5s;
+    animation-duration:.7s;
     animation-fill-mode: none;
     animation-iteration-count: 3;
  
@@ -35,11 +39,15 @@ main{
     place-items: center;
 }
 @media (max-width:768px){
+   
     main{
         margin: 10px auto;
         width: 100%;
         padding: 10px;
         
+    }
+    main h2{
+        font-size: 1.5rem;
     }
     @keyframes myanimation {
         from{
