@@ -28,11 +28,28 @@ main{
    
 }
 .footer{
-    position: absolute;
-    left: 0;
-    bottom: 0;
+   
     width: 100%;
     height: 10vh;
     display: grid;
     place-items: center;
+}
+@media (max-width:768px){
+    main{
+        margin: 10px auto;
+        width: 100%;
+        padding: 10px;
+        
+    }
+    @keyframes myanimation {
+        from{
+            font-size:.5rem;
+            color:blue;
+        }
+        to{
+            font-size:1rem;
+            color:orange;
+        }
+    }
+
 }
