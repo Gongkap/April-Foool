@@ -1,4 +1,4 @@
-const port =process.env.PORT || 3000;
+const port =process.env.PORT ||3000;
 const express =require('express');
 const ejs=require('ejs');
 const path =require('path');
@@ -16,5 +16,5 @@ app.get('/',(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log(`listening on the port ${port}`)
+    console.log('listening on the port '+port);
 })
